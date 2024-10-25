@@ -1,0 +1,27 @@
+<MinhaStack1@StackLayout>:
+    orientation: 'lr-tb'
+    Button:
+        text: 'A'
+        size_hint: .33, .1
+    Button:
+        text: 'B'
+        size_hint: .33, .1
+    Button:
+        text: 'C'
+        size_hint: .33, .1
+
+<MinhaStack2@StackLayout>:
+    orientation: 'rl-tb'
+    Button:
+        text: 'D'
+        size_hint: .33, .1
+    Button:
+        text: 'E'
+        size_hint: .33, .1
+        disabled: True
+    Button:
+        text: 'F'
+        size_hint: .33, .1
+
+MinhaStack1:
+    MinhaStack2:
