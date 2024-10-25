@@ -1,0 +1,32 @@
+<MinhaTelaVertical@BoxLayout>:
+    orientation: 'vertical'
+    padding: 20
+    spacing: 50
+    Button:
+        text: 'A'
+        size_hint: 1, 1.
+    Button:
+        text: 'B'
+        size_hint: 1, 1.
+    Button:
+        text: 'C'
+        size_hint: 1, 1.
+
+<MinhaTelaHorizontal@BoxLayout>:
+    orientation: 'horizontal'
+    padding: 10
+    spacing: 10
+    Button:
+        text: 'Executar'
+        size_hint: 1, 1.
+    Button:
+        text: 'Cancelar'
+        size_hint: 1, 1.
+        disabled: True
+    Button:
+        text: 'Sair'
+        size_hint: 1, 1.
+        on_press: app.stop()
+
+MinhaTelaVertical:
+    MinhaTelaHorizontal:
