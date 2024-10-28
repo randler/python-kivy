@@ -1,0 +1,47 @@
+<MyInput@TextInput>:
+    size_hint: None, None
+    width: 380
+    height: 50
+
+<MyStack1@StackLayout>:
+    orientation: 'tb-lr'
+    padding: 5
+    MyInput:
+        id: my_input1
+        text: "normal"
+    MyInput:
+        id: my_input2
+        text: "readonly"
+        readonly: True
+    MyInput:
+        id: my_input3
+        text: "Monalisa Monoline Script"
+        font_name: 'Monalisa Monoline Script'
+        font_size: 50
+    MyInput:
+        id: my_input4
+        text: "write_tab: False"
+        write_tab: False
+    MyInput:
+        id: my_input5
+        text: "tab_width: 10"
+        tab_width:  10
+    MyInput:
+        id: my_input6
+        text: "padding"
+        padding: 10
+    MyInput:
+        id: my_input7
+        text: "Copy: false"
+        copy: False
+        paste: False
+    
+    Button:
+        text: "Clique"
+        size_hint: 0.2, 0.1
+        pos_hint: {"x": 0.4, "y": 0.4}
+        on_press: root.handle()
+        
+
+MyStack1:
+    
