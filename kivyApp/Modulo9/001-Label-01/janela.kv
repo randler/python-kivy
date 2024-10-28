@@ -2,9 +2,8 @@
     text: 'Hello, World!'
     size_hint_y: None
     height: 50
-        
 
-StackLayout:
+<MyStack1@StackLayout>:
     orientation: 'tb-lr'
     padding: 50
 
@@ -14,5 +13,24 @@ StackLayout:
         #alter font name
         font_name: 'fonts/Roboto-Bold.ttf'
     MyLabel:
-        bold: True
+        bold: True        
+    MyLabel:
+        italic: True
+    MyLabel:
+        color: .5, .2, .3, 1
+        font_size: 20
+    MyLabel:
+        disabled: True
+        font_size: 30
+    MyLabel:
+        text: "Lorem ipsum dolor sit amet,\nconsectetur adipiscing elit.\nPhasellus nec nunc nec nunc. Nullam nec nunc nec nunc."
+        line_height: 1
         
+<MyStack2@StackLayout>:
+    Label:
+        text: "Lorem ipsum dolor\n sit amet,\nconsectetur adipiscing elit.\nPhasellus nec nunc nec nunc. Nullam nec nunc nec nunc."
+        max_lines: 2
+        color: .0, .9, .1, 1
+
+MyStack2:
+    
