@@ -1,0 +1,48 @@
+<MyButton@Button>:
+    text: 'Button'
+    size_hint_y: None
+    markup: True
+    height: 30
+    width: 100
+
+<MyStack1@StackLayout>:
+    orientation: 'tb-lr'
+    padding: 50
+
+    MyButton:
+        font_size: 30
+    MyButton:
+        font_size: 30
+        font_name: 'Monalisa Monoline Script'
+    MyButton:
+        bold: True
+        font_size: 22
+    MyButton:
+        italic: True
+        font_size: 22
+    MyButton:
+        color: .9, .5, .3, 1
+        font_size: 22
+    MyButton:
+        font_size: 22
+        text: 'bbcode: [b]Negrito[/b]'
+    MyButton:
+        font_size: 22
+        text: 'bbcode: [i]Italico[/i]'
+    MyButton:
+        font_size: 22
+        text: 'bbcode: [color=ff0000]Vermelho[/color]'
+    MyButton:
+        font_size: 22
+        text: 'bbcode: [size=30]Tamanho 30[/size]'
+    MyButton:
+        font_size: 22
+        text: 'bbcode: [font=Monalisa Monoline Script]Fonte Monalisa[/font]'
+    
+    MyButton:
+        text: 'click and release'
+        on_press: root.click(self)
+        on_release: root.release(self)
+
+MyStack1:
+    
